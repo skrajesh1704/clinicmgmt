@@ -3,6 +3,9 @@
 
 <?= $this->section("content"); ?>
 
+    
+
+    
     <!-- Slider Section -->
         <section class="mt-3">
             <?= $this->include("partials/slider"); ?>
@@ -17,4 +20,5 @@
         <section class="mt-3">
             <?= $this->include("partials/about"); ?>
         </section>
+
 <?= $this->endSection(); ?>

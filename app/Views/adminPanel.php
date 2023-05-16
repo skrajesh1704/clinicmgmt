@@ -2,8 +2,8 @@
 
 <?= $this->section("content"); ?>
 
-    <section class="mt-3">
-        <h2 class="text-center">Doctors Panel</h2>
+<section class="mt-3">
+    <h2 class="text-center">Admin Panel</h2>
         <?= $this->include("partials/search"); ?>
 
     </section>

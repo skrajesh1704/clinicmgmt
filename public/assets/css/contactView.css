@@ -1,0 +1,15 @@
+.contactCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 800px;
+}
+.contactRow{
+    width: 700px;
+}
+form .contactGrp{
+    width: 700px;
+    max-width: 750px;
+    margin-top: 10px
+}

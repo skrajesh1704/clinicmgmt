@@ -7,47 +7,164 @@
     <title>Clinic Mgmt |<?= $page_title; ?></title>
 
     <?= $this->include("partials/allCDNs"); ?>
+
+    
+
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="<?= base_url(); ?>home"> <img src="<?= base_url(); ?>public/assets/images/medicalteam.png" alt="Logo" width="50px" height="50px"> </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?= base_url(); ?>home">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="<?= base_url(); ?>home/patients">Patients List</a></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>home/reports">Reports List</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>home/doctors">Doctors List</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?= base_url(); ?>home/about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<div class="ui sidebar vertical left menu overlay visible" style="-webkit-transition-duration: 0.1s; overflow: visible !important;">
+  <div class="item logo">
+    <img src="<?= base_url(); ?>public/assets/images/medicalteam.png" alt="Logo" /><img src="<?= base_url(); ?>public/assets/images/medicalteam.png" style="display: none" />
+  </div>
+  <div class="ui accordion">
+    <a class="title item" href="<?= base_url(); ?>home">Dashboard 
+                </a>
+
+    <div class="title item">
+     <a class="title item" href="<?= base_url(); ?>home/patients" class=""> Patients List <i class="dropdown icon"></i> </a> 
+    </div>
+    <!-- <div class="content">
+      <a class="item" href="inbox.html">Inbox
+                    </a>
+      <a class="item" href="mail.html">Mailbox
+                    </a>
+      <a class="item" href="chat.html">Chat
+                    </a>
+      <a class="item" href="contacts.html">Contacts
+                    </a>
+      <a class="item" href="photoeditor.html">Photo Editor
+                    </a>
+      <a class="item" href="calendar.html">Calendar
+                    </a>
+      <a class="item" href="filter.html">Filter
+                    </a>
+      <a class="item" href="todo.html">Todo
+                    </a>
+    </div> -->
+
+    <div class="title item">
+      <a class="title item" href="<?= base_url(); ?>home/reports" class=""> Reports List <i class="dropdown icon"></i> </a> 
+    </div>
+
+    <div class="title item">
+      <a class="title item" href="<?= base_url(); ?>home/doctors" class=""> Doctors List <i class="dropdown icon"></i> </a> 
+    </div>
+    <!-- <div class="content">
+      <a class="item" href="sidebar.html">Sidebar
+                    </a>
+      <a class="item" href="menu.html">Nav
+                    </a>
+      <a class="item" href="animatedicon.html">Animated Icon
+                    </a>
+      <a class="item" href="box.html">Box
+                    </a>
+      <a class="item" href="cards.html">Cards
+                    </a>
+      <a class="item" href="color.html">Colors
+                    </a>
+      <a class="item" href="comment.html">Comment
+                    </a>
+      <a class="item" href="embed.html">Embed
+                    </a>
+      <a class="item" href="faq.html">Faq
+                    </a>
+      <a class="item" href="feed.html">Feed
+                    </a>
+      <a class="item" href="gallery.html">Gallery
+                    </a>
+      <a class="item" href="grid.html">Grid
+                    </a>
+      <a class="item" href="header.html">Header
+                    </a>
+      <a class="item" href="timeline.html">Timeline
+                    </a>
+      <a class="item" href="message.html">Message
+                    </a>
+      <a class="item" href="price.html">Price
+                    </a>
+    </div> -->
+
+    <div class="title item">
+      <a class="title item" href="<?= base_url(); ?>home/admin" class=""> <b>Admin Panel</b>  </a> 
+    </div>
+
+    <div class="title item">
+      <a class="title item" href="<?= base_url(); ?>contact" class=""> Contact Us </a> 
+    </div>
+    
+
+    
+  </div>
+  <div class="ui dropdown item displaynone">
+    <z>Dashboard</z>
+    <a href="<?= base_url(); ?>home"> <i class="fa fa-tachometer" aria-hidden="true"></i></a>
+
+    <div class="menu">
+      <div class="header">
+        Dashboard
+      </div>
+      <div class="ui divider"></div>
+      <a class="item" href="dashboard.html">Dashboard
+                    </a>
     </div>
   </div>
-</nav>
+
+  <div class="ui dropdown item displaynone">
+    <z>Patients</z>
+    <a href="<?= base_url(); ?>home/patients"> <i class="fa fa-user-plus" aria-hidden="true"></i></a>
+
+  </div>
+
+  <div class="ui dropdown item displaynone">
+    <z>Reports</z>
+    <a href="<?= base_url(); ?>home/reports"> <i class="fa fa-list-ul" aria-hidden="true"></i></a>
+
+  </div>
+
+  <div class="ui dropdown item displaynone">
+    <z>Doctors</z>
+    <a href="<?= base_url(); ?>home/doctors"> <i class="fa fa-user-md" aria-hidden="true"></i></a>
+
+  </div>
+  
+  <div class="ui dropdown item displaynone">
+    <z>Admin Panel</z>
+    <a href="<?= base_url(); ?>home/admin"> <i class="fa fa-lock" aria-hidden="true"></i></a>
+
+  </div>
+
+  <div class="ui dropdown item displaynone">
+    <z>Contact Us</z>
+    <a href="<?= base_url(); ?>contact"> <i class="fa fa-comments" aria-hidden="true"></i></a>
+
+  </div>
 
 
+</div>
+<div class="pusher">
+  <div class="ui menu asd borderless" style="border-radius: 0!important; border: 0; margin-left: 260px; -webkit-transition-duration: 0.1s;">
+    <a class="item openbtn">
+      <i class="icon content"></i>
+    </a>
+    <a class="item">Clinic Management System
+                </a>
+    <div class="right menu">
+      <!-- <div class="ui dropdown item">
+        Language <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item">English</a>
+          <a class="item">Russian</a>
+          <a class="item">Spanish</a>
+        </div>
+      </div> -->
+      <div class="item">
+        <div class="ui primary button">Sign Up</div>
+        <div class="ui primary button">Login</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?= $this->renderSection("content"); ?>
 
@@ -60,7 +177,8 @@
             <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             <strong class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></strong>
         </blockquote>
-        <small>Copyright &copy; Clinic Management System</small>
+        <small>Copyright &copy; Clinic Management System</small><br>
+        <small>Designed and Develpoed by Sk Rajesh</small>
         </div>
     </footer>
 

@@ -32,16 +32,22 @@ class Home extends BaseController
 
     public function reports(){
         $data = [
-            'page_title' => "Reports List",
+            'page_title' => " Reports List",
         ];
         return view("reportsView", $data);
     }
 
     public function doctors(){
         $data = [
-            'page_title' => "Doctors List",
+            'page_title' => " Doctors List",
         ];
         return view("doctorsView", $data);
     }
 
+    public function admin(){
+        $data = [
+            'page_title' => " Admin Panel",
+        ];
+        return view ("adminPanel", $data);
+    }
 }

@@ -1,0 +1,12 @@
+.searchBox{
+    width: 700px;
+    display: grid;
+    place-items: center;
+}
+.searchBox .input-group{
+    width: 600px;
+}
+
+.input-group-append button{
+    margin-left: 10px;
+}
